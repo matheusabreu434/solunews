@@ -1,104 +1,236 @@
-html {
-    scroll-behavior: smooth;
-    font-family: 'Poppins';
+:root {
+  background-color: rgb(255, 255, 255);
 }
+
 body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, rgba(58,10,96,1) 0%, rgba(190,0,255,1) 0%, rgba(50,52,255,1) 15%, rgba(0,71,255,1) 18%, rgba(0,213,255,1) 30%, rgba(0,255,177,1) 44%, rgba(0,255,79,1) 57%, rgba(251,255,0,1) 70%, rgba(255,147,0,1) 82%, rgba(255,0,157,1) 94%);
-    z-index: 9999;
-    padding-bottom: 0%;
-}
-  /*Aqui comeca os hovers da navbar*/
-.nav-link-novidades:hover {
-    color: rgb(210, 70, 238);
-    transition: color 0.3s ease-in-out;
-}
-.nav-link-diversos:hover {
-    color: rgb(12, 122, 150);
-    transition: color 0.3s ease-in-out
-}
-.nav-link-aniversariantes:hover {
-    color: #159c49;
-    transition: color 0.3s ease-in-out
-}
-.nav-link-recordes:hover {
-    color: #f18b2b;
-    transition: color 0.3s ease-in-out
-}
-.nav-link-soluboss:hover {
-    color: #fa4848;
-    transition: color 0.3s ease-in-out
-}
-  .nav-link-edicoes:hover {
-    color: #e73396;
-    transition: color 0.3s ease-in-out;
-}
-.navbar-nav li a {
-  padding: 0 7px;
-  font-size: 12.5px; 
-  font-family: 'Poppins'; 
-  font-weight: 800;
-  color: #333232; /* Define a cor padrão das letras */
-  text-decoration: none; /* Remove o sublinhado dos links */
-}
-.navbar {
-  background-color: #f5f2f2;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(58, 10, 96, 1) 0%, rgba(190, 0, 255, 1) 0%, rgba(50, 52, 255, 1) 15%, rgba(0, 71, 255, 1) 18%, rgba(0, 213, 255, 1) 30%, rgba(0, 255, 177, 1) 44%, rgba(0, 255, 79, 1) 57%, rgba(251, 255, 0, 1) 70%, rgba(255, 147, 0, 1) 82%, rgba(255, 0, 157, 1) 94%);
+  z-index: 9999;
+  padding-bottom: 0%;
+
 }
 
-/*Aqui termina*/
-h1{
-  font-size: 25px;
-  margin: 70px;
-}
-
-h2{
+body {
+  margin: 0;
+  background: rgb(255, 255, 255) !important;
   font-family: 'Poppins';
-  margin: 30px;
 }
+
+.navbar-toggler-icon {
+  color: rgb(255, 255, 255);
+}
+
+.nav-link-novidades:hover {
+  color: rgb(210, 70, 238);
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link-diversos:hover {
+  color: rgb(12, 122, 150);
+  transition: color 0.3s ease-in-out
+}
+
+.nav-link-aniversariantes:hover {
+  color: #159c49;
+  transition: color 0.3s ease-in-out
+}
+
+.nav-link-recordes:hover {
+  color: #f18b2b;
+  transition: color 0.3s ease-in-out
+}
+
+.nav-link-soluboss:hover {
+  color: #fa4848;
+  transition: color 0.3s ease-in-out
+}
+
+.nav-link-edicoes:hover {
+  color: #e73396;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav li a {
+  padding: 0 10px;
+  font-size: 14px;
+
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  margin-left: 0px !important;
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  margin-top: 4px;
+}
+
 #novidades h2 {
   color: rgb(105, 19, 122);
   font-weight: 800;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  margin-top: 80px;
+  background-color: rgb(255, 255, 255);
 }
+
 #diversos h2 {
   color: rgb(12, 122, 150);
   font-weight: 800;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
+
 #aniversariantes h2 {
   color: #159c49;
   font-weight: 800;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
+
 #recordes h2 {
   font-weight: 800;
   padding-bottom: 10px;
   margin-bottom: 20px;
   color: #f18b2b;
 }
+
 #soluboss h2 {
   color: #fa4848;
   font-weight: 900;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
-.margin-top-100{
-margin-top: 85px;
+
+.title-editor {
+  margin-bottom: 100px;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+  margin-top: 140px;
 }
-.video{
-  width: 750px;
-  height: 480px; 
-  border: #f5f2f2;
-  border-radius: 20px;
-  margin-bottom: 50px;
-  margin-top: 70px;
+
+.title-editor h1 {
+  font-weight: 900;
+}
+
+.title-editor p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.navbar-fixed {
+  width: 100% !important;
+  padding: 10px;
+}
+
+.content-section {
+  background-image: url('../images/bg_1920.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 2000px auto;
+  padding: 20px;
+}
+
+.video-settings {
+  background-color: #ffffffd8;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.video-caption {
+  height: 100px;
+  overflow: auto;
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+.post{
+
+  border-radius: 18px;
+  padding: 30px;
+}
+.posts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.post-3 {
+  background-color: #F684AF;
+}
+
+.post-3 h2 {
+  font-weight: 900;
+  color: #ad2258;
+  font-size: 20px;
+
+}
+
+.post-3 p {
+  font-weight: 600;
+  font-size: 15px;
+  color: #ad2258;
+  margin-bottom: 0px;
+}
+
+.post-2 {
+  background-color: #CF96EE;
+}
+
+.post-2 h2 {
+  font-weight: 900;
+  color: #631b8a;
+  font-size: 20px;
+}
+
+.post-2 p {
+  font-weight: 600;
+  font-size: 15px;
+  color: #631b8a;
+  margin-bottom: 0px;
+}
+
+
+.post-1 {
+  background-color: #aae5fc;
+}
+
+.post-1 h2 {
+  font-weight: 900;
+  color: #245872;
+  font-size: 20px;
+}
+
+.post-1 p {
+  font-weight: 600;
+  font-size: 15px;
+  color: #245872;
+  margin-bottom: 0px;
 }

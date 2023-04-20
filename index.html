@@ -1,34 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://static-cdn.soluall.net/2018/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://static-cdn.soluall.net/2018/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://static-cdn.soluall.net/2018/favicon/favicon-16x16.png">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.rtl.min.css" integrity="sha384-T5m5WERuXcjgzF8DAb7tRkByEZQGcpraRTinjpywg37AO96WoYN9+hrhDVoM6CaT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <title>Solunews</title>
-  </head>
-  
-  <body>
-    <!--Menu principal-->
-    <div class="container">
-         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-          <div class="container-fluid">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://static-cdn.soluall.net/2018/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://static-cdn.soluall.net/2018/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://static-cdn.soluall.net/2018/favicon/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-T5m5WERuXcjgzF8DAb7tRkByEZQGcpraRTinjpywg37AO96WoYN9+hrhDVoM6CaT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Solunews!</title>
+</head>
+
+<body>
+  <!--Começo da Navbar-->
+  <div class="container">
+    <nav class="navbar fixed-top navbar-expand-lg"
+      style="padding-left: 25px; padding-right:15px ; padding-bottom: 15px; padding-top: 15px">
+      <div class="container-fluid navbar-fixed">
         <a class="navbar-brand" href="#">
           <a class="navbar-brand" href="#">
-              <img src="images/simbolo.png" alt="Solunews" width="30" height="28" class="d-inline-block align-text-top">
+            <img src="images/simbolo.png" alt="Solunews" width="180" height="35" class="d-inline-block align-text-top">
           </a>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mobile-menu-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,60 +47,117 @@
               <a class="nav-link-diversos" href="#diversos">Diversos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link-aniversariantes" href="#aniversariantes">Aniversariantes</a>                     
+              <a class="nav-link-aniversariantes" href="#aniversariantes">Aniversariantes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link-recordes" href="#recordes">Recordes</a>                     
+              <a class="nav-link-recordes" href="#recordes">Recordes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link-soluboss" href="#soluboss">Novo Soluboss</a>                     
+              <a class="nav-link-soluboss" href="#soluboss">Novo Soluboss</a>
             </li>
-            <li class="nav-item dropdown-center">
+            <!-- <li class="nav-item dropdown-center">
               <a class="nav-link-edicoes dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                Últimas edições
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Próxima edição</a></li>
                 <li><a class="dropdown-item" href="#">Edição anterior</a></li>
                 <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=Gd85T9fM9qM" target="_blank">Última edição</a></li>
-              </ul>
+              </ul>-->
             </li>
           </ul>
         </div>
       </div>
-     </nav>
+    </nav>
+  </div>
+
+  <!--Fim da NavBar-->
+
+  <div class="title-editor text-center">
+    <p class="edition-serial">Edição #42</p>
+    <h1>Tapioca gelada</h1>
+    <p class="edition-date">Terça-feira, 18 de abril de 2023</p>
+  </div>
+
+  <div class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="video-settings">
+            <div class="video-container">
+              <iframe class="video" src="https://www.youtube.com/embed/pc0LvdzNwJ4" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <p class="video-caption"> Recados, novos solubosses, aniversários e muito mais...
+              A 42ª edição do nosso Solunews está no ar!
+              Quem conta sua história hoje é a @Beatriz Machado</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="posts-wrapper">
+            <div class="post post-1">
+              <h2>Destaques</h2>
+              <p>Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo.Em
+                linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo.</p>
+            </div>
+            <div class="post post-2">
+              <h2>O que há de novo?</h2>
+              <p>Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo.Em
+                linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo.</p>
+            </div>
+            <div class="post post-3">
+              <h2>Destaques</h2>
+              <p>Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo.Em
+                linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="container video-container">
-      <section id="banner" class="text-center margin-top-100">
-      <iframe class="video" src="https://www.youtube.com/embed/_fqccApXjI8" title="Solunews - 04/07/22" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </section>
-    </div>
-    <div class="container">  
-      <section id="novidades">
-        <h2>Novidades</h2> 
-       </section>
-      
-     <section id="diversos">
+  </div>
+
+  <div class="container-fluid" style="background-color: rgb(255, 255, 255);">
+
+    <section id="novidades">
+      <h2>Novidades</h2>
+
+    </section>
+
+
+    <section id="diversos">
       <h2>Diversos</h2>
-     </section>
-    
-     <section id="aniversariantes">
+    </section>
+
+    <section id="aniversariantes">
       <h2>Aniversariantes</h2>
       <p></p>
-     </section>
-    
-     <section id="recordes">
-      <h2>Recordes</h2>
-      
-     </section>
+    </section>
 
-     <section id="soluboss">
+    <section id="recordes">
+      <h2>Recordes</h2>
+
+    </section>
+
+    <section id="soluboss">
       <h2>Novo Soluboss</h2>
       <p></p>
-     </section>
+    </section>
 
-    </div>
-    <!-- BootstrapJS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </div>
 
-  </body>
+
+
+  <!-- BootstrapJS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
